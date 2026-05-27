@@ -1,0 +1,317 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=true]{hyperref}
+\pagestyle{headandfoot}
+\firstpageheader{MIT OpenCourseWare}{}{\textbf{EXTREMELY HARD -- MIT LEVEL}}
+\runningheader{MIT OpenCourseWare}{}{\textbf{EXTREMELY HARD -- MIT LEVEL}}
+\firstpagefooter{}{Page \thepage}{}
+\runningfooter{}{Page \thepage}{}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{MIT OpenCourseWare}}\\6.851\\Advanced Data Structures
+\vspace{0.5cm}
+{6.851} --- {Advanced Data Structures}
+\vspace{0.3cm}
+May 2026
+\vspace{0.3cm}
+\textbf{EXTREMELY HARD -- MIT LEVEL}
+\end{center}
+
+\begin{center}
+\textbf{Time Limit: 3 hours}
+\end{center}
+
+\begin{center}
+\textbf{Total Marks: 100}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{questions}
+
+\question[6]
+Prove the Byzantine Generals Problem has no solution for $n \leq 3m$ generals with $m$ traitors in the oral messages model. Show the $n \geq 3m+1$ necessary condition.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove the CAP theorem: a distributed data store cannot simultaneously provide more than two of Consistency, Availability, and Partition tolerance. Formalize the theorem using a proof by contradiction with atomic registers.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove the PCP theorem: $\mathsf{NP} = \mathsf{PCP}(\log n, 1)$. Construct a verifier for SAT that reads $O(1)$ bits of the proof and uses $O(\log n)$ random bits.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove that problem $\mathsf{RL} \subseteq \mathsf{SC}$ (randomized logspace is in Steve's class) using the Nisan generator and showing that RL can be derandomized with polynomial seed length.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove that if $\mathsf{P} = \mathsf{NP}$, then $\mathsf{BPP} = \mathsf{P}$. Conversely, show that $\mathsf{BPP} \subseteq \mathsf{EXP}$ and discuss the relationship between $\mathsf{P}$ and $\mathsf{BPP}$.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove that the matrix multiplication exponent $\omega$ satisfies $2 \leq \omega < 2.373$ by analyzing the Coppersmith-Winograd algorithm and its subsequent improvements.
+
+\vspace{0.3cm}
+
+\question[4]
+Prove the time hierarchy theorem: for time-constructible functions $f(n)$, there exists a language decidable in $O(f(n))$ time but not in $o(f(n)/\log f(n))$ time.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove that $\mathsf{EXP}^{\mathsf{NP}}$ contains languages that require exponential-size circuits (Karp-Lipton theorem variant). Show that if $\mathsf{NP} \subseteq \mathsf{P}/\mathsf{poly}$ then $\mathsf{PH} = \Sigma_2^P$.
+
+\vspace{0.3cm}
+
+\question[4]
+Prove that the amortized cost of a sequence of $n$ operations in a Fibonacci heap is $O(\log n)$ for extract-min and $O(1)$ for all other operations, using the potential function method.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove that one-way functions exist if and only if $\mathsf{P} \neq \mathsf{NP}$. Construct a one-way function based on the hardness of SAT, or show that the existence of OWFs is equivalent to pseudorandom generators.
+
+\vspace{0.3cm}
+
+\question[4]
+Prove type soundness for the simply typed lambda calculus using the progress and preservation lemmas. Extend the proof to System F with parametric polymorphism.
+
+\vspace{0.3cm}
+
+\question[2]
+Prove that parity cannot be computed by a polynomial-size constant-depth circuit ($\mathsf{AC}^0$) using the switching lemma. Show that any $\mathsf{AC}^0$ circuit computing parity must have size $\exp(\Omega(n^{1/(d-1)}))$.
+
+\vspace{0.3cm}
+
+\question[2]
+Prove that the minimum distance of a linear code can be computed using the parity check matrix and show that the decisional version is NP-complete (Berlekamp-Welch theorem variant).
+
+\vspace{0.3cm}
+
+\question[2]
+Prove that $\mathsf{PP}$ (Probabilistic Polynomial time) is closed under complement and relate it to $\mathsf{PH}$ via Toda's theorem. Show that $\mathsf{PH} \subseteq \mathsf{P}^{\#\mathsf{P}}$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Karger-Stein randomized min-cut algorithm runs in $O(n^2 \log^3 n)$ time and succeeds with high probability. Analyze the probability that a particular min-cut survives the contraction process.
+
+\vspace{0.3cm}
+
+\question[7]
+Prove the space hierarchy theorem: for space-constructible $f(n) = \Omega(\log n)$, $\mathsf{SPACE}[f(n)] \subsetneq \mathsf{SPACE}[f(n) \log f(n)]$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove that directed Steiner tree is NP-hard by reducing from set cover. Then show it is approximable within $O(\log^2 n)$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove that 3-SAT reduces to Hamiltonian Cycle in polynomial time. Construct the explicit gadget for each clause and variable, showing that a satisfying assignment corresponds to a Hamiltonian cycle in the constructed graph.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Goldreich-Levin theorem: if $f$ is a one-way function, then there exists a one-way function $g$ and a hardcore predicate $b$ such that $b(x)$ is hard to predict given $g(x)$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the parallel repetition theorem for interactive proofs: if a verifier accepts with probability $p$ in a single round, then the verifier accepts in $n$ parallel repetitions with probability at most $p^{\Omega(n)}$ (for certain protocols).
+
+\vspace{0.3cm}
+
+\question[2]
+Prove the Chernoff bound: for independent Bernoulli random variables $X_1,\ldots,X_n$ with $\Pr[X_i = 1] = p_i$, let $X = \sum X_i$ and $\mu = \mathbb{E}[X]$. Show that $\Pr[X \geq (1+\delta)\mu] \leq (\frac{e^\delta}{(1+\delta)^{1+\delta}})^\mu$ for all $\delta > 0$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove an $\Omega(n \log n)$ lower bound for sorting in the comparison-based model using the adversary method. Then apply the adversary argument to prove a lower bound for finding the $k$-th smallest element.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove that graph isomorphism is in $\mathsf{NP} \cap \mathsf{coAM}$. Show that $\mathsf{GI}$ is unlikely to be NP-complete (if it were, $\mathsf{PH}$ collapses).
+
+\vspace{0.3cm}
+
+\question[4]
+Prove that the Unique Games Conjecture implies the hardness of approximating Max-Cut beyond the Goemans-Williamson constant $\alpha_{GW} \approx 0.878$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Adleman theorem: $\mathsf{BPP} \subseteq \mathsf{P}/\mathsf{poly}$. Show that any randomized polynomial-time algorithm can be derandomized with polynomial-size advice.
+
+\vspace{0.3cm}
+
+\end{questions}
+
+\newpage
+\section*{Solutions}
+
+\textbf{Solution 1:}
+
+For $m=1$, $n=3$: assume generals A (commander), B, C with B loyal, C traitor. Commander sends 'attack'. C tells B 'retreat'. B receives conflicting messages. For $n=3m$, reduce by grouping: simulate each general as $m+1$ generals, one traitor in each group to create inconsistency. The $n \geq 3m+1$ condition is sufficient via the Oral Message algorithm OM(m) recursively sending $m+1$ rounds.
+
+\vspace{0.5cm}
+
+\textbf{Solution 2:}
+
+Assume all three hold. During a partition, two nodes cannot communicate. A write to node A must be visible on a read from node B (consistency). But node B must respond (availability) without contacting A (partition). So B has either stale data (no consistency) or must wait (no availability), contradiction. This shows at most two properties can hold simultaneously.
+
+\vspace{0.5cm}
+
+\textbf{Solution 3:}
+
+($\supseteq$) is trivial. ($\subseteq$): Build a PCP verifier for SAT. Start from the NP-complete constraint satisfaction problem with constant degree (via expander graphs). Apply the gap amplification step (repeatedly replace constraints by their AND using composition). The final verifier reads $O(1)$ proof bits. The theorem shows that approximate solutions to NP problems remain hard.
+
+\vspace{0.5cm}
+
+\textbf{Solution 4:}
+
+Nisan's pseudorandom generator for logspace: $G: \{0,1\}^{O(\log^2 n)} \to \{0,1\}^{n}$ fools any logspace machine. The construction uses the INW generator (impagliazzo-Nisan-Wigderson) based on extractors. By enumerating all $2^{O(\log^2 n)}$ seeds, we can simulate $\mathsf{RL}$ in $\mathsf{SC}$ (polynomial time, polylog space). This gives $\mathsf{RL} \subseteq \mathsf{SC} \subseteq \mathsf{P}$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 5:}
+
+If $\mathsf{P} = \mathsf{NP}$, then $\mathsf{PH} = \mathsf{P}$ (polynomial hierarchy collapses). Since $\mathsf{BPP} \subseteq \Sigma_2^P \cap \Pi_2^P$ (by Sipser-Gacs theorem), we get $\mathsf{BPP} \subseteq \mathsf{P}$. The inclusion $\mathsf{BPP} \subseteq \mathsf{EXP}$ follows from exhaustive simulation of the probabilistic computation over all random bits. Whether $\mathsf{P} = \mathsf{BPP}$ is open but believed true due to pseudorandom generators.
+
+\vspace{0.5cm}
+
+\textbf{Solution 6:}
+
+Strassen's $O(n^{2.807})$ algorithm uses the identity $M_2(2) = 7$ giving $\omega = \log_2 7$. Coppersmith-Winograd uses the laser method and bilinear algebra to achieve $\omega < 2.376$. The key idea: construct a family of tensors $T_n$ with border rank $r_n$ and combining them recursively. The asymptotic inequality $\omega < \log_{n^{2/3}}(r_n)$ yields improved bounds. The current best $\omega < 2.37286$ uses refined laser method analysis.
+
+\vspace{0.5cm}
+
+\textbf{Solution 7:}
+
+Construct a diagonalizing TM $D$ that on input $x$ runs $M_x$ on $x$ for $f(|x|)$ steps and outputs the opposite answer. If $D$ runs in $o(f(n)/\log f(n))$ time, we get a contradiction for all sufficiently large $x$. The $\log f(n)$ overhead comes from simulation costs: $D$ must simulate $M_x$ which has a different tape alphabet and number of tapes.
+
+\vspace{0.5cm}
+
+\textbf{Solution 8:}
+
+If $\mathsf{NP} \subseteq \mathsf{P}/\mathsf{poly}$, then SAT has polynomial-size circuits. By the Karp-Lipton theorem, $\Pi_2^P \subseteq \Sigma_2^P$, collapsing $\mathsf{PH}$ to $\Sigma_2^P$. The proof: for any $\Pi_2^P$ language, the existential player guesses the circuit for SAT and uses it to answer the universal quantifier. This shows $\mathsf{PH} \subseteq \Sigma_2^P$, hence $\mathsf{PH} = \Sigma_2^P$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 9:}
+
+Define $\Phi =$ number of trees $+ 2 \cdot$ number of marked nodes. Insert: add one tree, $\Delta\Phi = 1$, actual cost $O(1)$, amortized $O(1)$. Decrease-key: cut and cascade, each cut adds a tree but may clear marks. Extract-min: $O(\text{trees} + \text{degree})$ actual cost. By the rank bound $\text{degree} = O(\log n)$, and trees decrease by at most $O(\log n)$, giving amortized $O(\log n)$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 10:}
+
+($\Rightarrow$): If OWF $f$ exists, then inverting $f$ is in $\mathsf{NP}$ (guess a preimage and verify) but not in $\mathsf{P}$ by definition. So $\mathsf{P} \neq \mathsf{NP}$. ($\Leftarrow$): Unconditionally constructing OWF from $\mathsf{P} \neq \mathsf{NP}$ is open. However, using Levin's construction, we can define $f(M,x,1^t) = (M,x,1^t)$ where $M$ outputs the result of $t$ steps, which is one-way if $\mathsf{P} \neq \mathsf{NP}$ under certain assumptions.
+
+\vspace{0.5cm}
+
+\textbf{Solution 11:}
+
+Progress: if $\vdash e: \tau$ and $e$ is closed, then $e$ is a value or $e \to e'$. Proof by induction on typing derivation. Preservation: if $\vdash e: \tau$ and $e \to e'$, then $\vdash e': \tau$. Proof by induction on the reduction relation with substitution lemma. For System F, add type abstraction and application cases, with type substitution preserving the subject reduction property.
+
+\vspace{0.5cm}
+
+\textbf{Solution 12:}
+
+H\u00e5stad's switching lemma: a random restriction of a DNF formula leaves a decision tree of depth $O(\log s)$ with high probability. Apply this to each layer of an $\mathsf{AC}^0$ circuit of depth $d$ and size $S$. After $d-1$ random restrictions, the circuit becomes a decision tree of depth $O(\log S)^{d-1}$. Since parity has decision tree depth $n$, $O(\log S)^{d-1} \geq n$, so $S \geq 2^{\Omega(n^{1/(d-1)})}$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 13:}
+
+For a linear $[n,k]$ code with parity check matrix $H$, the minimum distance $d = \min_{c \neq 0, Hc^T=0} w(c)$. Decisional problem (given $G$ and $w$, is $d \leq w$?) is NP-complete via reduction from 3SAT, by constructing a code whose parity checks encode clause satisfaction. For a linear code over $\mathbb{F}_q$, finding minimum weight codeword is NP-hard.
+
+\vspace{0.5cm}
+
+\textbf{Solution 14:}
+
+$\mathsf{PP}$ is closed under complement by definition ($\Pr[M(x)=1] > 1/2$ vs $\Pr[M(x)=1] \leq 1/2$). Toda's theorem: $\mathsf{PH} \subseteq \mathsf{P}^{\#\mathsf{P}}$ by showing $\Sigma_k^P \subseteq \mathsf{BPP}^{\oplus\mathsf{P}}$ (using random hashing) and $\mathsf{BPP}^{\oplus\mathsf{P}} \subseteq \mathsf{P}^{\#\mathsf{P}}$ (since counting parity of solutions is in $\#\mathsf{P}$). This shows counting is harder than the entire polynomial hierarchy.
+
+\vspace{0.5cm}
+
+\textbf{Solution 15:}
+
+Contract edges uniformly until $t$ vertices remain. A fixed min-cut $C$ of size $k$ survives a single contraction step with probability $\geq 1 - 2/t$. By induction, survival probability $\geq \binom{t}{2}/\binom{n}{2}$. Setting $t = n/\sqrt{2}$ and recursing twice gives $O(n^2 \log n)$ expected time. The success probability is $\Omega(1/\log n)$, and repeating $O(\log^2 n)$ times gives high probability.
+
+\vspace{0.5cm}
+
+\textbf{Solution 16:}
+
+Diagonalization: construct a language $L$ decidable in $O(f(n)\log f(n))$ space but not in $o(f(n))$ space. The diagonalizing machine $D$ on input $x$ simulates $M_x$ on $x$ using at most $f(|x|)$ space and if $M_x$ halts within $2^{O(f)}$ steps, outputs the opposite. The simulation uses a counter of $O(\log f)$ bits. The $\log f(n)$ factor is needed for configuration counting to detect infinite loops.
+
+\vspace{0.5cm}
+
+\textbf{Solution 17:}
+
+Given set cover instance $(U,\mathcal{S},k)$, construct a directed graph with source $s$, set vertices $s_j$, element vertices $u_i$, edges $s \to s_j$ (cost 1), $s_j \to u_i$ if $u_i \in S_j$ (cost 0). Steiner tree connecting $s$ to all $u_i$ uses $\leq k$ set vertices iff cover of size $k$ exists. The approximation uses randomized rounding and the junction tree theorem.
+
+\vspace{0.5cm}
+
+\textbf{Solution 18:}
+
+For each variable $x_i$, create a chain of vertices $v_{i,1}, \ldots, v_{i,k}$ with edges forming a path that can be traversed left-to-right (true) or right-to-left (false). For each clause $C_j = (\ell_1 \lor \ell_2 \lor \ell_3)$, insert a clause vertex connected to the corresponding literal vertices in the variable chains. A Hamiltonian cycle exists iff we can pick a consistent direction for each variable chain that hits all clause vertices. This is the standard NP-completeness reduction.
+
+\vspace{0.5cm}
+
+\textbf{Solution 19:}
+
+Define $g(x,r) = (f(x), r)$ for $|x| = |r|$. The hardcore predicate $b(x,r) = x \cdot r \mod 2$. If an adversary predicts $b$ with advantage $\varepsilon$, construct an inverter for $f$: use a clever reconstruction (Goldreich-Levin list decoding) that, given $f(x)$ and oracle access to the predictor, outputs a list containing $x$ with high probability. The reconstruction uses pairwise independent sampling and majority decoding.
+
+\vspace{0.5cm}
+
+\textbf{Solution 20:}
+
+For XOR games, Raz's parallel repetition theorem shows the value decays exponentially: $\omega(G^{\otimes n}) \leq \omega(G)^{c n}$ where $c$ depends on the game. The proof uses information theory: the winning probability for each coordinate is correlated only through the initial shared randomness, and the protocol cannot coordinate between coordinates without increasing communication.
+
+\vspace{0.5cm}
+
+\textbf{Solution 21:}
+
+Use the moment generating function: $\Pr[X \geq t] \leq \min_{\lambda > 0} e^{-\lambda t} \mathbb{E}[e^{\lambda X}] = \min_{\lambda > 0} e^{-\lambda t} \prod \mathbb{E}[e^{\lambda X_i}]$. Since $\mathbb{E}[e^{\lambda X_i}] = 1 + p_i(e^\lambda - 1) \leq \exp(p_i(e^\lambda - 1))$, we get $\Pr[X \geq (1+\delta)\mu] \leq (\frac{e^\delta}{(1+\delta)^{1+\delta}})^\mu$ by optimizing $\lambda = \ln(1+\delta)$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 22:}
+
+Any comparison tree that sorts $n$ elements must have at least $n!$ leaves, so depth $\geq \log_2(n!) = \Omega(n \log n)$. Adversary argument: maintain a set of possible permutations consistent with comparisons so far. Each comparison eliminates at most half the remaining permutations, so $\Omega(\log(n!))$ comparisons needed. For selection, the adversary maintains a partial order ensuring at least $n-1$ comparisons are needed for the minimum.
+
+\vspace{0.5cm}
+
+\textbf{Solution 23:}
+
+$\mathsf{GI} \in \mathsf{NP}$: a permutation is a polynomial-time verifiable certificate. $\mathsf{GI} \in \mathsf{coAM}$: the verifier sends a random permutation of one graph; the prover must identify which graph. The interactive protocol has soundness $1/2$. If $\mathsf{GI}$ were $\mathsf{NP}$-complete, then $\mathsf{PH} = \Sigma_2^P$ (Boole'an-Karp'n theorem) because $\mathsf{coNP} \subseteq \mathsf{AM}$ and $\mathsf{AM}$ collapses if $\mathsf{coNP} \subseteq \mathsf{AM}$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 24:}
+
+Assuming UGC, Khot et al. showed that Max-Cut is NP-hard to approximate within any factor greater than $\alpha_{GW}$. The reduction: start from a unique game instance, construct a graph using long-code encoding of labels. A labeling that satisfies $1-\varepsilon$ of unique constraints gives a cut with value $\alpha_{GW} + o(1)$. Dictatorship testing and Fourier analysis are used to prove completeness and soundness.
+
+\vspace{0.5cm}
+
+\textbf{Solution 25:}
+
+Let $L \in \mathsf{BPP}$ with TM $M$ using $m(n)$ random bits. For each input size $n$, the set of bad random strings for input $x$ has size $\leq 2^{m(n)}/3$. By union bound over $2^n$ inputs, the total bad set has size $\leq 2^n \cdot 2^{m(n)}/3 < 2^{m(n)}$ for $n$ large enough. So there exists a good random string $r_n$ that works for all inputs of length $n$. Provide $r_n$ as advice, giving $\mathsf{BPP} \subseteq \mathsf{P}/\mathsf{poly}$.
+
+\vspace{0.5cm}
+
+\end{document}
