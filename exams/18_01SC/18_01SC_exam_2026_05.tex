@@ -1,0 +1,317 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=true]{hyperref}
+\pagestyle{headandfoot}
+\firstpageheader{MIT OpenCourseWare}{}{\textbf{EXTREMELY HARD -- MIT LEVEL}}
+\runningheader{MIT OpenCourseWare}{}{\textbf{EXTREMELY HARD -- MIT LEVEL}}
+\firstpagefooter{}{Page \thepage}{}
+\runningfooter{}{Page \thepage}{}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{MIT OpenCourseWare}}\\18.01SC\\Single Variable Calculus
+\vspace{0.5cm}
+{18.01SC} --- {Single Variable Calculus}
+\vspace{0.3cm}
+May 2026
+\vspace{0.3cm}
+\textbf{EXTREMELY HARD -- MIT LEVEL}
+\end{center}
+
+\begin{center}
+\textbf{Time Limit: 3 hours}
+\end{center}
+
+\begin{center}
+\textbf{Total Marks: 100}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{questions}
+
+\question[3]
+Prove the Brouwer fixed-point theorem using differential topology: any continuous map $f: \overline{B}^n \to \overline{B}^n$ has a fixed point. Use the fact that there is no smooth retraction of the ball onto its boundary.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove the open mapping theorem: if $T: X \to Y$ is a bounded linear operator between Banach spaces and $T$ is surjective, then $T$ maps open sets to open sets. Use it to prove the inverse mapping theorem.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Nash embedding theorem for compact Riemannian manifolds: any compact $C^\infty$ Riemannian manifold can be isometrically embedded into $\mathbb{R}^N$ for sufficiently large $N$.
+
+\vspace{0.3cm}
+
+\question[2]
+Prove the Schauder fixed-point theorem using Schauder estimates and the Arzela-Ascoli theorem: a compact operator $T: X \to X$ on a Banach space has a fixed point if it maps a closed convex set into itself.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Poincar\'e inequality: for $u \in W_0^{1,p}(\Omega)$ with $\Omega \subset \mathbb{R}^n$ bounded, $\|u\|_{L^p} \leq C \|\nabla u\|_{L^p}$. Show that the constant $C$ depends on the diameter of $\Omega$ and give the optimal constant for $p=2$ on an interval.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove the Gagliardo-Nirenberg-Sobolev inequality: for $1 \leq p < n$, there exists $C = C(n,p) > 0$ such that $\|u\|_{L^{p^*}(\mathbb{R}^n)} \leq C \|\nabla u\|_{L^p(\mathbb{R}^n)}$ for all $u \in C_c^1(\mathbb{R}^n)$, where $p^* = np/(n-p)$.
+
+\vspace{0.3cm}
+
+\question[4]
+Let $M$ be a compact oriented $n$-manifold with boundary $\partial M$. State and prove Stokes' theorem for differential forms. Then apply it to prove the divergence theorem: $\int_M \operatorname{div} F \, dV = \int_{\partial M} F \cdot n \, dS$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Lax-Milgram theorem and use it to show existence and uniqueness of weak solutions to the Dirichlet problem $-\Delta u = f$ in $\Omega$, $u|_{\partial\Omega} = 0$ for $f \in L^2(\Omega)$.
+
+\vspace{0.3cm}
+
+\question[3]
+Prove that $\mathbb{R}P^3$ is diffeomorphic to $SO(3)$ by constructing explicit maps and verifying they are smooth inverses. Use this to compute $\pi_1(SO(3))$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove that the Laplace operator $\Delta$ on a compact Riemannian manifold has discrete spectrum $\lambda_1 \leq \lambda_2 \leq \cdots \to \infty$ and each eigenvalue has finite multiplicity. Show $\lambda_1 = \inf \frac{\|\nabla u\|^2}{\|u\|^2}$ over nonzero $u \in H^1(M)$ with $\int u = 0$.
+
+\vspace{0.3cm}
+
+\question[4]
+Prove the Hopf-Rinow theorem: for a Riemannian manifold $(M,g)$, metric completeness is equivalent to geodesic completeness (every geodesic extends for all time).
+
+\vspace{0.3cm}
+
+\question[3]
+Prove using the epsilon-delta definition that the function $f(x) = x^2 \sin(1/x)$ for $x \neq 0$ and $f(0) = 0$ is differentiable at $x = 0$ but $f'(x)$ is not continuous at $x = 0$. Carefully justify all steps in your epsilon-delta arguments.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the Atiyah-Singer index theorem for a simple case: compute the index of the Dirac operator on $S^2$ and verify it equals the integral of the $\widehat{A}$-genus.
+
+\vspace{0.3cm}
+
+\question[5]
+Let $f_n: [0,1] \to \mathbb{R}$ be a sequence of functions of bounded variation with $\operatorname{Var}(f_n) \leq C$ uniformly and $f_n \to f$ pointwise. Prove that $f$ is of bounded variation and $\operatorname{Var}(f) \leq C$. Give a counterexample showing that uniform bounded variation is necessary.
+
+\vspace{0.3cm}
+
+\question[4]
+Construct an exhaustion function (proper smooth function bounded below) on any smooth manifold and use it to prove that every smooth manifold admits a complete Riemannian metric.
+
+\vspace{0.3cm}
+
+\question[2]
+Let $(X, d)$ be a complete metric space and $T: X \to X$ a contraction mapping with contraction factor $k < 1$. Prove the Banach fixed-point theorem: $T$ has a unique fixed point. Additionally, derive the error estimate $\|x_n - x^*\| \leq \frac{k^n}{1-k} \|x_1 - x_0\|$ where $x_{n+1} = T(x_n)$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove the maximum principle for elliptic PDEs: if $Lu = -\Delta u + c(x) u \geq 0$ in $\Omega$ with $c \geq 0$, then $\max_{\overline{\Omega}} u \leq \max_{\partial\Omega} u^+$. Show how this implies uniqueness for the Dirichlet problem.
+
+\vspace{0.3cm}
+
+\question[5]
+Construct a sequence of continuous functions $f_n: [0,1] \to \mathbb{R}$ that converges pointwise to $f(x) = 0$ but does NOT converge uniformly. Prove your construction works and explain why uniform convergence fails.
+
+\vspace{0.3cm}
+
+\question[5]
+Analyze the stability of the Runge-Kutta method of order 4 when applied to the stiff ODE $y' = \lambda y$ with $\lambda \in \mathbb{C}$, $\operatorname{Re}(\lambda) < 0$. Determine the region of absolute stability and discuss how the step size $h$ must be chosen for stiff problems.
+
+\vspace{0.3cm}
+
+\question[4]
+State and prove the spectral theorem for compact self-adjoint operators on a Hilbert space. Show that such an operator has a countable set of eigenvalues that accumulate only at zero, and the eigenvectors form an orthonormal basis.
+
+\vspace{0.3cm}
+
+\question[3]
+Classify the second-order linear PDE $u_{xx} + 2u_{xy} + u_{yy} + u_x + u_y = 0$. Determine its type (elliptic, parabolic, hyperbolic) and find its canonical form. Solve the resulting canonical equation.
+
+\vspace{0.3cm}
+
+\question[6]
+Prove the Hille-Yosida theorem: a linear operator $A$ generates a strongly continuous contraction semigroup on a Banach space $X$ iff $A$ is closed, densely defined, and all $\lambda > 0$ are in the resolvent set with $\|R(\lambda,A)\| \leq 1/\lambda$.
+
+\vspace{0.3cm}
+
+\question[2]
+Prove the Rellich-Kondrachov compactness theorem: $W^{1,p}(\Omega) \hookrightarrow\!\!\!\to L^q(\Omega)$ compactly for $1 \leq q < p^*$ when $\Omega$ is bounded and $\partial\Omega$ is $C^1$.
+
+\vspace{0.3cm}
+
+\question[5]
+Prove that there is no continuous linear functional $L: \ell^\infty \to \mathbb{R}$ that extends the limit functional on $c$ (convergent sequences) and satisfies $\|L\| = 1$. (Hint: use the Hahn-Banach theorem and consider the Banach limit.)
+
+\vspace{0.3cm}
+
+\question[4]
+Compute the Fourier transform of the distribution $p.v.(1/x)$ and prove that $\widehat{p.v.(1/x)}(\xi) = -i\pi \, \operatorname{sgn}(\xi)$. Use this to solve the Hilbert transform equation $H(u) = f$.
+
+\vspace{0.3cm}
+
+\end{questions}
+
+\newpage
+\section*{Solutions}
+
+\textbf{Solution 1:}
+
+Suppose $f$ has no fixed point. Define $r(x) =$ intersection of ray from $f(x)$ through $x$ with $\partial B^n$. This gives a smooth retraction (after smooth approximation). By Sard's theorem, regular values exist. For a regular value $y$, $r^{-1}(y)$ is a 1-manifold with boundary, one endpoint at $y$. The other endpoint would be in $B^n$, impossible since $r$ maps interior to boundary. Contradiction.
+
+\vspace{0.5cm}
+
+\textbf{Solution 2:}
+
+Use Baire category: $Y = \cup_n n T(B_X(0,1))$ so some $nT(B_X(0,1))$ has nonempty interior. Show $T(B_X(0,1))$ contains a neighborhood of 0. Then by scaling, $T$ maps open balls to open sets. The inverse mapping theorem follows: if $T$ is bijective bounded linear, then $T^{-1}$ is bounded.
+
+\vspace{0.5cm}
+
+\textbf{Solution 3:}
+
+Sketch: Use the implicit function theorem to construct a short immersion $f_0: M \to \mathbb{R}^N$. The metric $g$ on $M$ can be expressed as $f_0^*g_{\mathbb{R}^N} + h$. Use the Nash-Moser iteration to solve the system of PDEs $\partial_i f \cdot \partial_j f = g_{ij}$. The iteration converges by tame estimates on the linearized operator $L_f(h) = df \cdot \nabla h$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 4:}
+
+Let $C \subset X$ be closed convex, $T(C) \subset C$, $T$ compact. Approximate $T$ by finite-rank operators $T_n$ using Schauder basis. By Brouwer, each $T_n$ has a fixed point $x_n$. By compactness of $T$, $\{T(x_n)\}$ has convergent subsequence $T(x_{n_k}) \to y$. Since $x_{n_k} = T_{n_k}(x_{n_k})$ and $T_{n_k} \to T$ uniformly, $y$ is a fixed point of $T$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 5:}
+
+For $u \in C_c^\infty(\Omega)$, write $u(x) = \int_{-\infty}^{x_1} \partial_1 u(t, x'') dt$. By H\"older, $|u(x)|^p \leq (\operatorname{diam}\Omega)^{p-1} \int |\partial_1 u|^p dt$. Integrate over $\Omega$ to get $\|u\|_p^p \leq (\operatorname{diam}\Omega)^p \|\nabla u\|_p^p$. On $(0,\pi)$, the optimal constant for $p=2$ is $C = 1/\pi$, attained by $u(x) = \sin(x)$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 6:}
+
+For $p=1$, use $|u(x)| \leq \int_{-\infty}^{x_i} |\partial_i u| dx_i$, multiply over $i=1,\ldots,n$, integrate, apply H\"older repeatedly to get $\|u\|_{n/(n-1)} \leq \prod (\int |\partial_i u|)^{1/n} \leq \frac{1}{n} \sum \int |\partial_i u|$. For general $p$, apply the $p=1$ case to $|u|^q$ with suitable $q$ and use H\"older.
+
+\vspace{0.5cm}
+
+\textbf{Solution 7:}
+
+Stokes: $\int_M d\omega = \int_{\partial M} \omega$ for an $(n-1)$-form $\omega$. Proof: Use partition of unity to reduce to $\mathbb{R}^n$ case, where it follows from the fundamental theorem of calculus and Fubini. For divergence theorem, let $\omega = \sum_i (-1)^{i-1} F_i \, dx^1 \wedge \cdots \wedge \widehat{dx^i} \wedge \cdots \wedge dx^n$. Then $d\omega = (\sum_i \partial F_i/\partial x^i) dx^1 \wedge \cdots \wedge dx^n = \operatorname{div} F \, dV$. The boundary term gives $\int_{\partial M} F \cdot n \, dS$ by the Hodge star duality.
+
+\vspace{0.5cm}
+
+\textbf{Solution 8:}
+
+Lax-Milgram: Let $a: H \times H \to \mathbb{R}$ be coercive bilinear continuous on Hilbert $H$, $f \in H^*$. Then $\exists! u \in H$: $a(u,v) = f(v)$ for all $v \in H$. For the Dirichlet problem, $H = H_0^1(\Omega)$, $a(u,v) = \int_\Omega \nabla u \cdot \nabla v$, $f(v) = \int_\Omega f v$. Poincar\'e inequality gives coercivity, trace theorem gives boundary values.
+
+\vspace{0.5cm}
+
+\textbf{Solution 9:}
+
+Map $\mathbb{R}P^3 \to SO(3)$: represent a point in $\mathbb{R}P^3$ as a unit quaternion $q$ modulo sign. The conjugation map $v \mapsto q v q^{-1}$ on pure quaternions gives a rotation in $SO(3)$. This is a smooth double cover $S^3 \to SO(3)$ with kernel $\{\pm1\}$, inducing $\mathbb{R}P^3 \cong SO(3)$. Thus $\pi_1(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 10:}
+
+The resolvent $(-\Delta + I)^{-1}: L^2 \to H^2$ is compact by Rellich-Kondrachov. The spectral theorem for compact self-adjoint operators gives discrete eigenvalues $\mu_n \to 0$, so $\lambda_n = 1/\mu_n - 1 \to \infty$. Finite multiplicity follows from finite-dimensional eigenspaces of compact operators. The variational characterization follows from the Rayleigh quotient. The condition $\int u = 0$ removes the trivial $\lambda_0 = 0$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 11:}
+
+($\Rightarrow$): Assume metric completeness. For a geodesic $\gamma$ with maximal interval $(a,b)$, if $b < \infty$, take $t_n \to b$. Then $\{\gamma(t_n)\}$ is Cauchy (distance $\leq C|t_n - t_m|$) so converges. Extend $\gamma$ using the exponential map at the limit point. ($\Leftarrow$): Assume geodesic completeness. Take a Cauchy sequence $p_n$. Connect each $p_n$ to $p_0$ by a minimizing geodesic. Bound on distances and completeness of initial data gives convergent subsequence.
+
+\vspace{0.5cm}
+
+\textbf{Solution 12:}
+
+We prove $f'(0) = 0$ by showing $|(f(h) - f(0))/h - 0| = |h \sin(1/h)| \leq |h|$. For any $\varepsilon > 0$, choose $\delta = \varepsilon$. Then $|h| < \delta$ implies $|h \sin(1/h)| < \varepsilon$, so $f'(0)=0$. For $x \neq 0$, $f'(x) = 2x \sin(1/x) - \cos(1/x)$. This oscillates wildly near 0 since $\cos(1/x)$ has no limit. Hence $f'$ is not continuous at 0.
+
+\vspace{0.5cm}
+
+\textbf{Solution 13:}
+
+The Dirac operator $D$ on $S^2$ acts on spinors. $\operatorname{ind}(D) = \dim\ker D - \dim\ker D^*$. By Lichnerowicz formula, $D^2 = \nabla^*\nabla + \frac{1}{4}R$. On $S^2$ with $R=2$, $\ker D$ consists of the constant spinor. So $\operatorname{ind}(D) = 1$. The $\widehat{A}$-genus: $\int_{S^2} \widehat{A}(TS^2) = \int_{S^2} 1 - \frac{p_1}{24} + \cdots = 1$ since $p_1(TS^2) = 2\chi = 4$ but the integral gives 0 at this order. Indeed $\int_{S^2} \frac{R}{4\pi} = \chi/2 = 1$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 14:}
+
+For any partition $0 = x_0 < \cdots < x_k = 1$, $|f(x_i) - f(x_{i-1})| = \lim_n |f_n(x_i) - f_n(x_{i-1})| \leq \liminf_n \operatorname{Var}(f_n) \leq C$. So $\operatorname{Var}(f) \leq C$. Counterexample without UB: $f_n(x) = n x$ on $[0,1/n]$, $f_n(x)=1$ elsewhere. $\operatorname{Var}(f_n) = 2n$, $f_n \to 1$ pointwise, but limit has variation 0, so inequality fails direction.
+
+\vspace{0.5cm}
+
+\textbf{Solution 15:}
+
+Let $\{U_i\}$ be a countable cover by coordinate balls, $\{\rho_i\}$ a partition of unity. Define $f = \sum_i i \rho_i$. This is proper: $f^{-1}([-\infty, c])$ is compact (only finitely many $i \leq c$ contribute). For a Riemannian metric, start with any metric $g_0$, let $g = g_0 + df \otimes df$ on $f^{-1}((-\infty, \infty))$. The gradient of $f$ has unit length, so any curve must escape to infinity in infinite length.
+
+\vspace{0.5cm}
+
+\textbf{Solution 16:}
+
+Pick any $x_0 \in X$, define $x_{n+1} = T(x_n)$. Then $d(x_{n+1}, x_n) \leq k^n d(x_1, x_0)$. By triangle inequality, $d(x_{n+m}, x_n) \leq \sum_{i=0}^{m-1} k^{n+i} d(x_1, x_0) \leq \frac{k^n}{1-k} d(x_1, x_0)$. So $\{x_n\}$ is Cauchy, converges to $x^*$. By continuity of $T$, $T(x^*) = x^*$. Uniqueness: if $Tx=x$, $Ty=y$, then $d(x,y) = d(Tx,Ty) \leq k d(x,y)$, so $d(x,y)=0$. The error estimate follows from taking $m \to \infty$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 17:}
+
+Suppose $u$ attains an interior maximum at $x_0$ with $u(x_0) = M > 0$ and $M > \max_{\partial\Omega} u^+$. At $x_0$, $\Delta u \leq 0$ (Hessian negative semidefinite), so $Lu = -\Delta u + c u \geq 0 + cM \geq 0$. Strictly, if $c>0$ or $M>0$, this gives $Lu > 0$ at the maximum, contradiction. For uniqueness of $\Delta u = f$ with $u|_{\partial\Omega} = g$, difference of two solutions satisfies $\Delta w = 0$, $w|_{\partial\Omega} = 0$, so $w \equiv 0$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 18:}
+
+Let $f_n(x) = \max(0, 1 - n|x - 1/n|)$ (triangular spikes at $1/n$). For any $x$, for $n > 1/x$, $f_n(x) = 0$, so $f_n \to 0$ pointwise. But $\|f_n\|_\infty = 1$ for all $n$, so $\sup_{x \in [0,1]} |f_n(x) - 0| = 1 \not\to 0$, hence convergence is not uniform. This shows pointwise convergence does not imply uniform convergence.
+
+\vspace{0.5cm}
+
+\textbf{Solution 19:}
+
+The RK4 method applied to $y' = \lambda y$ gives $y_{n+1} = R(z) y_n$ where $z = h\lambda$ and $R(z) = 1 + z + z^2/2 + z^3/6 + z^4/24$. The stability region is $\{z \in \mathbb{C}: |R(z)| \leq 1\}$. For stiff problems where $\operatorname{Re}(\lambda)$ is large negative, $|R(z)|$ grows for large $|z|$ (RK4 is not A-stable), requiring $h$ small enough that $h\lambda$ stays in the stability region.
+
+\vspace{0.5cm}
+
+\textbf{Solution 20:}
+
+Let $T: H \to H$ be compact self-adjoint. Show $\|T\| = \sup_{|x|=1} |\langle Tx, x \rangle|$ (achieved). Let $\lambda_1 = \pm\|T\|$ be the extremal eigenvalue with eigenvector $e_1$. Inductively apply the same argument to $T$ restricted to $\{e_1,\ldots,e_{n-1}\}^\perp$. Compactness implies $\lambda_n \to 0$. The eigenvectors form an ONB by the spectral decomposition $Tx = \sum \lambda_n \langle x, e_n \rangle e_n$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 21:}
+
+The characteristic equation: $a_{11} dy^2 - 2a_{12} dx dy + a_{22} dx^2 = 0$ gives $1\cdot dy^2 - 2\cdot1\cdot dx dy + 1\cdot dx^2 = 0$, so $(dy - dx)^2 = 0$. Double root: parabolic type. Characteristic curves: $y - x = c$. Canonical coordinates: $\xi = y - x$, $\eta = x$. Then $u_{\eta\eta} + u_\eta = 0$. Solve: $u(\xi,\eta) = A(\xi) e^{-\eta} + B(\xi)$, i.e. $u(x,y) = A(y-x) e^{-x} + B(y-x)$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 22:}
+
+($\Rightarrow$): If $A$ generates $T(t)$, show $R(\lambda,A) = \int_0^\infty e^{-\lambda t} T(t) dt$, so $\|R(\lambda,A)\| \leq \int_0^\infty e^{-\lambda t} \|T(t)\| dt \leq 1/\lambda$. ($\Leftarrow$): Define $A_n = nAR(n,A)$ (Yosida approximants) which are bounded generators of $T_n(t) = e^{t A_n}$. Show $T_n(t)$ converges strongly to a semigroup $T(t)$ and its generator is $A$.
+
+\vspace{0.5cm}
+
+\textbf{Solution 23:}
+
+Take a bounded sequence $\{u_n\}$ in $W^{1,p}$. By the Sobolev-Gagliardo-Nirenberg inequality, it's bounded in $L^{p^*}$. Use the Frechet-Kolmogorov criterion for compactness in $L^q$: show $\|u_n(\cdot + h) - u_n\|_{L^q} \to 0$ uniformly as $h \to 0$ using difference quotients and the $W^{1,p}$ bound. Extract a subsequence convergent in $L^q$ by the Arzela-Ascoli type argument.
+
+\vspace{0.5cm}
+
+\textbf{Solution 24:}
+
+The Hahn-Banach theorem guarantees the existence of such extensions (Banach limits), but they are not unique and not continuous in the sense of being representable by a sequence. The key issue: $\ell^\infty / c_0$ is non-separable and the quotient map is not injective. Banach limits exist but require the axiom of choice. They satisfy $\liminf x_n \leq L(x) \leq \limsup x_n$ and are shift-invariant.
+
+\vspace{0.5cm}
+
+\textbf{Solution 25:}
+
+$\langle \widehat{p.v.(1/x)}, \varphi \rangle = \langle p.v.(1/x), \widehat{\varphi} \rangle$. Write $p.v.(1/x) = \lim_{\varepsilon \to 0^+} \frac{1}{x} \chi_{|x|>\varepsilon}$. Its Fourier transform: $\int_{|x|>\varepsilon} \frac{e^{-2\pi i x \xi}}{x} dx = -i\pi \operatorname{sgn}(\xi)$ as $\varepsilon \to 0$. The Hilbert transform $H(u) = \frac{1}{\pi} p.v. \int \frac{u(t)}{x-t} dt$ has symbol $\widehat{H(u)}(\xi) = -i \operatorname{sgn}(\xi) \widehat{u}(\xi)$, so $H^{-1} = -H$.
+
+\vspace{0.5cm}
+
+\end{document}
