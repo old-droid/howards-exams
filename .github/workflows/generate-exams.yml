@@ -11,11 +11,10 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -25,32 +24,36 @@ jobs:
           sudo apt-get install -y -qq texlive-latex-recommended texlive-latex-extra \
             texlive-fonts-recommended texlive-science texlive-fonts-extra
 
-      - name: Install opencode binary
+      - name: Install opencode
         run: |
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
-      - name: Generate exam papers via opencode
+      - name: Generate exam Python script via opencode
         run: |
           opencode run --file .opencode/tasks/generate-exams.md \
             --dangerously-skip-permissions \
-            "Generate 25-question extremely hard MIT-level exam PDFs for all 70 courses as described in the attached prompt"
+            "Generate the Python exam generation script as described"
 
-      - name: Count generated papers
-        id: count
-        run: |
-          tex_count=$(find exams -name '*.tex' 2>/dev/null | wc -l)
-          pdf_count=$(find exams -name '*.pdf' 2>/dev/null | wc -l)
-          echo "TeX files: $tex_count"
-          echo "PDF files: $pdf_count"
-          echo "tex_files=$tex_count" >> $GITHUB_OUTPUT
-          echo "pdf_files=$pdf_count" >> $GITHUB_OUTPUT
-
-      - name: Commit and push
+      - name: Loop courses — generate PDFs one by one
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add exams/ scripts/
+
+          COURSES=$(node -e "
+            const c = require('fs').readFileSync('js/data.js','utf8');
+            const m = c.match(/code:\s*'([^']+)'/g);
+            console.log(m.map(s=>s.match(/'([^']+)'/)[1]).join(' '));
+          ")
+
           TIMESTAMP=$(date '+%Y-%m')
-          git commit -m "chore(exams): monthly exam papers — ${TIMESTAMP}" || echo "No changes to commit"
-          git push
+
+          for code in $COURSES; do
+            echo "=== Generating $code ==="
+            python3 scripts/generate_exam.py "$code" || echo "WARN: $code failed"
+
+            git add exams/
+            git commit -m "exam($code): ${TIMESTAMP}" || true
+            git push || echo "WARN: push failed for $code"
+            echo "=== $code done ==="
+          done
