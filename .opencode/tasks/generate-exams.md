@@ -18,7 +18,7 @@ Create ONE Python script at `scripts/generate_exam.py` that generates an exam PD
 - Header: course code, title, month/year, "EXTREMELY HARD — MIT LEVEL"
 - 3-hour time limit, 100 total marks
 - Questions numbered 1–25 summing to 100 points
-- Full solutions after `\newpage \section*{Solutions}`
+- NO solutions
 - Use a seeded RNG based on `YYYYMM` (mulberry32) so same month = same exam
 
 ### Department Problem Pools
