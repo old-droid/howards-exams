@@ -10,7 +10,7 @@ Create ONE Python script at `scripts/generate_exam.py` that generates an exam PD
 - Read `js/data.js` to find the course by `code`
 - Generate a LaTeX `.tex` file at `exams/{code_sanitized}/{code_sanitized}_exam_{YYYY}_{MM}.tex`
 - Run `pdflatex -interaction=nonstopmode` on the .tex file to produce PDF
-- If pdflatex fails, print a warning but exit 0 (don't crash)
+- If pdflatex fails, print a a warning and start troubleshooting.
 
 ### Each Exam Must Have:
 - **25 questions** — extremely hard MIT graduate/proof level
